@@ -1,5 +1,5 @@
-
-const groceries = []
+const db = new LocalDB('grocery-list-db')
+const groceries = db.getAll() || []
 
 const groceryList = document.getElementById('groceryList')
 const newGroceryInput = document.getElementById('newGrocery')
